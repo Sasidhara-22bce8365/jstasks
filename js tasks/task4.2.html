@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label>Enter the string:</label>
+        <input type="text" id="str"/> <br>
+        <input type="button" onClick="rever()" Value="reverse" />
+        <p>The Result is : <br>
+            <span id = "r"></span></form>
+
+    <script>
+        const rev = (a)=>{
+            var inital=""
+        for(i= 1;i<a.length+1;i++){
+        
+         inital= inital+(a[a.length -i])
+        }
+        return inital
+    }
+      
+    function rever(){
+
+    const inp =  document.getElementById("str").value
+       a = rev(inp)
+       document.getElementById("r").innerHTML= a
+    }
+
+    </script>
+</body>
+</html>
